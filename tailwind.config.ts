@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        poppins: ['var(--font-poppins)'],
+        inter: ['var(--font-inter)'],
+        satoshi: ['var(--font-satoshi)'],
+      },
     },
   },
   plugins: [],
