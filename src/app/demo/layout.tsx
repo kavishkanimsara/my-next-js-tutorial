@@ -58,9 +58,11 @@ export default function Layout({ children }: { children: ReactNode }) {
               border: '1px solid #AAA',
               boxShadow: 'inset 0 0 5px rgba(0,0,0,0.15)',
             }}></div>
-            <Navbar/>
-            {children}
-            <Footer/>
+            <div className="font-nunito">
+              <Navbar/>
+              {children}
+              <Footer/>
+            </div>
             {/* Paper artifacts - creases and stains */}
             <div style={{
               position: 'absolute',

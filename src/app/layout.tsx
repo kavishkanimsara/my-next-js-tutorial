@@ -1,7 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Balsamiq_Sans, Comic_Neue, DM_Sans, Geist, Geist_Mono, Lexend_Deca, Nunito, Patrick_Hand, Poppins, Schoolbell, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "./demo/_components/Footer";
+
+const nunito = Lexend_Deca({
+  variable: "--font-nunito",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+const comicNeue = Comic_Neue({
+  variable: "--font-comic-neue",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}  antialiased  justify-center items-center min-h-screen text-xl`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${comicNeue.variable} ${nunito.variable} antialiased  justify-center items-center min-h-screen text-xl`}
       >
         <div>{children}</div>
       </body>

@@ -16,6 +16,8 @@ export default {
         poppins: ['var(--font-poppins)'],
         inter: ['var(--font-inter)'],
         satoshi: ['var(--font-satoshi)'],
+        comicNeue: ['var(--font-comic-neue)'],
+        nunito: ['var(--font-nunito)'],
       },
     },
   },

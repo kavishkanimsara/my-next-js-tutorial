@@ -92,17 +92,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="z-20 w-full bg-transparent font-poppins font-semibold text-black shadow-sm transition-all duration-500">
+    <nav className="z-20 w-full bg-transparent font-nunito font-semibold text-black shadow-sm transition-all duration-500">
       <div className="bg-[#47A9AA] px-6 pt-3">
         <div>
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <Image
-                src="/images/dabuLogo.png"
-                width={100}
-                height={60}
-                alt="Dabu Logo"
+              <img
+                src="/phonics-logo.png"
+                alt="Logo"
+                className="h-10 w-full"
               />
             </Link>
 
