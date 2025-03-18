@@ -9,6 +9,7 @@ interface DoodleUIProps {
   bgColor: string;
   buttonColor?: 'blue' | 'green' | 'pink' | 'purple';
   inputValue?: string;
+  children?: React.ReactNode;
   onInputChange?: (value: string) => void;
   onContinueAction?: () => void;
 }
@@ -16,6 +17,7 @@ interface DoodleUIProps {
 export const DoodleUI: React.FC<DoodleUIProps> = ({
   title,
   subtitle,
+  children,
   bgColor,
   inputValue: externalInputValue,
   buttonColor,
@@ -41,11 +43,7 @@ export const DoodleUI: React.FC<DoodleUIProps> = ({
         <p className="mb-4 text-2xl font-semibold text-gray-800 font-comicNeue">
           {subtitle}
         </p>
-        <DoodleTextField
-          value={value}
-          onChange={handleInputChange}
-          placeholder="Type something..."
-        />
+        {children}
         <div className="flex flex-wrap justify-center">
           <DoodleButton onClick={onContinueAction} color={buttonColor}>Continue</DoodleButton>
         </div>
